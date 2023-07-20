@@ -1,0 +1,93 @@
+//PRN: 22070123099
+//EXP.2
+//NAME:SANUSHA MENON
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    int MyintVar=10;
+    float MyfloatVar=10.5;
+    double MydoubleVar=13.89;
+    char MycharVar='#';
+    string MystrVar="Hey";
+    bool MyboolVar=true;
+
+    //PRINTING DIFFERENT DATA TYPES
+    cout<<"The value of int variable is " <<MyintVar<<endl;
+    cout<<"The value of float variable is " <<MyfloatVar<<endl;
+    cout<<"The value of double variable is " <<MydoubleVar<<endl;
+    cout<<"The value of char variable is " <<MycharVar<<endl;
+    cout<<"The value of string variable is " <<MystrVar<<endl;
+    cout<<"The value of boolean variable is " <<MyboolVar<<endl;
+    
+    /*/OUTPUT
+    The value of int variable is 10
+    The value of float variable is 10.5
+    The value of double variable is 13.89
+    The value of char variable is #
+    The value of string variable is Hey
+    The value of boolean variable is 1
+    /*/
+
+    //PRINTING SIZE OF DATA TYPES
+    cout<<"The size of int variable is " <<sizeof(MyintVar)<<" bytes"<<endl;
+    cout<<"The size of float variable is " <<sizeof(MyfloatVar)<<" bytes"<<endl;
+    cout<<"The size of double variable is " <<sizeof(MydoubleVar)<<" bytes"<<endl;
+    cout<<"The size of char variable is " <<sizeof(MycharVar)<<" bytes"<<endl;
+    cout<<"The size of boolean variable is " <<sizeof(MyboolVar)<<" bytes"<<endl;
+
+    /*/OUTPUT
+    The size of int variable is 4 bytes
+    The size of float variable is 4 bytes
+    The size of double variable is 8 bytes
+    The size of char variable is 1 bytes
+    The size of boolean variable is 1 bytes
+    /*/
+
+    //BOOLEAN COMPARISON
+    bool imagecolour=true;
+    if (imagecolour){
+        cout<<"IMAGE IS COLOURFUL"<<endl;
+    }
+    else {
+        cout<<"IMAGE IS NOT COLOURFUL"<<endl;
+    }
+    /*/OUTPUT
+    IMAGE IS COLOURFUL
+    /*/
+
+    //NUMERICAL COMPARISON
+    int num1;
+    int num2;
+
+    cout<<"Enter first number: ";
+    cin>>num1;
+    cout<<"Enter second number: ";
+    cin>>num2;
+    if (num1>num2){
+        cout<<"number 1 is greater than number 2"<<endl;
+    }
+    else {
+        cout<<"number 2 is greater than number 1"<<endl;
+    }
+
+    /*/OUTPUT
+    Enter first number: 1
+    Enter second number: 2
+    number 2 is greater than number 1
+    /*/
+
+    //INPUT BOOL VALUE
+    bool booleannum;
+    cout<<"Enter boolean value:";
+    cin>>boolalpha;
+    cin>>booleannum;
+    cout<<booleannum;
+
+    /*/OUTPUT
+    Enter boolean value:true
+    1
+    /*/
+
+}
