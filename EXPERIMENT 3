@@ -1,0 +1,101 @@
+//PRN: 22070123099
+//EXP.3
+//NAME: SANUSHA MENON
+
+//DISPLAYING DIGITS OF PRN IN SEPARATE LINES
+#include<iostream>
+using namespace std;
+int main()
+{
+    int prn;
+    int digit;
+    cout<<"Enter your PRN:"<<endl;
+    cin>>prn;
+    while (prn>0)
+    {
+        digit=prn%10;
+        cout<<digit<<endl;
+        prn=prn/10;
+    }
+}
+
+/*/OUTPUT
+Enter your PRN:
+23099
+9
+9
+0
+3
+2
+/*/
+
+//GRADING STUDENTS
+#include<iostream>
+using namespace std;
+int main()
+{
+    //INPUT MARKS
+    int sub1;
+    int sub2;
+    int sub3;
+    int sub4;
+    int sub5;
+    int sum;
+    int average;
+    cout<<"Enter your marks for each subject:"<<endl;
+    cin>>sub1>>sub2>>sub3>>sub4>>sub5;
+    sum=(sub1+sub2+sub3+sub4+sub5);
+    average=(sum)/5;
+    //GRADING ACCORDING TO AVERAGE MARKS
+    if (average>=90)
+    {
+        cout<<"GRADE IS O";
+    }
+    else if (average>=85)
+    {
+        cout<<"GRADE IS A+";
+    }
+    else if (average>=75)
+    {
+        cout<<"GRADE IS A";
+    }
+    else if (average>=65)
+    {
+        cout<<"GRADE IS B+";
+    }
+    else if (average>=55)
+    {
+        cout<<"GRADE IS B";
+    }
+    else if (average>=40)
+    {
+        cout<<"GRADE IS C";
+    }
+    else
+    {
+        cout<<"STUDENT HAS FAILED";
+    }
+}
+/*/OUTPUT
+Enter your marks for each subject:
+98
+99
+96
+85 
+90
+GRADE IS O
+Enter your marks for each subject:
+45
+66
+50
+23
+67
+GRADE IS C
+Enter your marks for each subject:
+33
+20
+52
+34
+22
+STUDENT HAS FAILED
+/*/
