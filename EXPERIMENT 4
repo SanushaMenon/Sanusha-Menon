@@ -1,0 +1,67 @@
+//PRN: 22070123099
+//EXP.4
+//NAME: SANUSHA MENON
+
+//BITWISE OPERATORS
+//SET AND RESET
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i=35,a,b;
+    int set=16;
+    int reset=223;
+    a=i|set;
+    b=i&reset;
+    cout<<a<<endl;
+    cout<<b;
+
+}
+/*/OUTPUT
+51
+3
+/*/
+
+//SHIFT OPERATION
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i=67,a,b;
+    int shift_left=3;
+    int shift_right=4;
+    a=i<<shift_left;
+    cout<<a<<endl;
+    b=i>>shift_right;
+    cout<<b;
+}
+/*/OUTPUT
+536
+4
+/*/
+
+//SETTING RESETTING WITH BITS
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i=50,set,reset,a,b;
+    cout<<"Original number="<<i<<endl;
+    cout<<"Bit to be set= "<<endl;
+    cin>>set;
+    cout<<"Bit to be reset= "<<endl;
+    cin>>reset;
+    a=i|(1<<set);
+    b=i&(~1<<reset);
+    cout<<"After setting "<<a<<endl;
+    cout<<"After resetting "<<b;
+}
+/*/OUTPUT
+Original number=50
+bit to be set= 
+6
+bit to be reset= 
+1
+After setting 114
+After resetting 48
+/*/
