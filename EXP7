@@ -1,0 +1,102 @@
+//PRN: 22070123099
+//EXP.7
+//NAME:SANUSHA MENON
+
+//DISPLAY THE MARKS OF STUDENTS
+#include<iostream>
+using namespace std;
+int main() {
+    int i;
+    int m[10]={10,9,8,10,8,5,6,3,8,4};
+    for (i=0;i<=9;i++)
+    {
+    cout<<m[i]<<endl;}}
+
+/*/OUTPUT
+10
+9
+8
+10
+8
+5
+6
+3
+8
+4
+/*/
+
+//TAKE THE MARKS OF STUDENTS
+#include<iostream>
+using namespace std;
+int main() {
+    int i;
+    int m[5];
+    for (i=0;i<=4;i++)
+    {
+        cout<<"ENTER STUDENT MARKS"<<endl;
+        cin>>m[i];
+    }
+    for (i=0;i<=4;i++)
+    {
+        cout<<m[i]<<endl;
+    }}
+
+/*/OUTPUT
+ENTER STUDENT MARKS
+22
+ENTER STUDENT MARKS
+33
+ENTER STUDENT MARKS
+44
+ENTER STUDENT MARKS
+55
+ENTER STUDENT MARKS
+66
+22
+33
+44
+55
+66
+/*/
+
+//CHECK MARKS
+#include<iostream>
+using namespace std;
+int main() {
+    int i,num;
+    int m[5];
+    for (i=0;i<=4;i++)
+    {
+        cout<<"ENTER STUDENT MARKS"<<endl;
+        cin>>m[i];
+    }
+    cout<<"ENTER NUMBER TO BE CHECKED ";
+    cin>>num;
+    for (i=0;i<=4;i++)
+    {
+        if (num==m[i])
+        {
+        cout<<"NUMBER IS THERE at"<<i+1<<" postion";
+        break;
+        }
+        if (i==5)
+        {
+        cout<<"NUMBER IS not THERE";
+        break;
+        }
+
+    }
+}
+
+ENTER STUDENT MARKS
+22
+ENTER STUDENT MARKS
+33
+ENTER STUDENT MARKS
+44
+ENTER STUDENT MARKS
+55
+ENTER STUDENT MARKS
+66
+ENTER NUMBER TO BE CHECKED 44
+NUMBER IS THERE at3 postion
