@@ -1,0 +1,69 @@
+//PRN: 22070123099
+//EXP.16
+//NAME:SANUSHA MENON
+
+//DIVIDING BY 0
+
+#include<iostream>
+using namespace std;
+
+int main() {
+int a;
+int b;
+int c;
+cout<<"enter 2 numbers where a>b"<<endl;
+cin>>a>>b;
+try{
+    if (b!=0)
+    {
+        c=a/b;
+        cout<<c;
+    }
+    else{
+        throw(b);
+    }
+   
+    }
+catch(int e)
+{
+    cout<<"error because of"<<e;
+}
+}
+
+/*/OUTPUT:
+enter 2 numbers where a>b
+3 2
+1
+/*/
+
+//AGE RESTRICTION
+
+#include<iostream>
+using namespace std;
+
+int main() {
+int age;
+cout<<"enter age"<<endl;
+cin>>age;
+
+try{
+    if (age>=18){
+     
+        cout<<"entry allowed";
+    }
+    else{
+        throw(age);
+    }
+   
+    }
+catch(int e)
+{
+    cout<<"error because of"<<e;
+}
+}
+
+/*/OUTPUT:
+enter age
+19
+entry allowed
+/*/
