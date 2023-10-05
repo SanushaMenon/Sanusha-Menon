@@ -1,0 +1,190 @@
+//PRN: 22070123099
+//NAME: SANUSHA MENON
+// EXPERIMENT-5
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int choice;
+    cout<<"1. Monday"<<endl<<"2. Tuesday"<<endl<<"3. Wednesday"<<endl<<"4. Thursday"<<endl<<"5. Friday"<<endl<<"6. Saturday"<<endl<<"7. Sunday"<<endl;
+    cout<<"Enter your choice: ";
+    cin>>choice;
+
+    switch(choice) {
+        case 1:
+        cout<<"Monday";
+        break;
+        case 2:
+        cout<<"Tuesday";
+        break;
+        case 3:
+        cout<<"Wednesday";
+        break;
+        case 4:
+        cout<<"Thursday";
+        break;
+        case 5:
+        cout<<"Friday";
+        break;
+        case 6:
+        cout<<"Saturday";
+        break;
+        case 7:
+        cout<<"Sunday";
+        break;
+        default:
+        cout<<"Wrong Input";
+    }
+}
+
+
+//PRN: 22070123102
+//Exp-5
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int i, j, k, n;
+    cout<<"Enter number of rows: ";
+    cin>>n;
+    k=n;
+    for(i=1;i<=n;i++) {
+        for(j=1;j<=n;j++) {
+            if(j>=k) {
+                cout<<"*";
+            }
+            else {
+                cout<<" ";
+            }
+        }
+        k--;
+        cout<<endl;
+    }
+
+}
+
+
+//PRN: 22070123102
+//Exp-5
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int op;
+    cout<<"Enter:"<<endl<<"1 - while execution"<<endl<<"2 - do-while execution"<<endl;
+    cin>>op;
+    if(op==1) {
+        int j=0;
+        while(j<50) {
+            cout<<j+1<<"  ";
+            j++;
+        }
+    }
+
+    else if(op==2) {
+        int j=100;
+        do {
+            cout<<j<<"  ";
+            j++;
+        }
+        while(j<50);
+    }
+
+    else {
+        cout<<"Wrong input";
+    }
+}
+        
+
+//PRN: 22070123102
+//Exp-5
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int i=0;
+    while(i<50) {
+        cout<<i+1<<"  ";
+        i++;
+    }
+}
+
+
+//PRN: 22070123102
+//Exp-5
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int i;
+    for(i=0;i<10;i++) {
+        cout<<"Hello World ("<<i+1<<")"<<endl;
+    }
+
+}
+
+
+//PRN: 22070123102
+//Exp-5
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int  num1, num2, num3;
+    cout<<"Enter number-1: ";
+    cin>>num1;
+    cout<<"Enter number-2: ";
+    cin>>num2;
+    cout<<"Enter number-3: ";
+    cin>>num3;
+
+    if(num1>num2) {
+        if(num1>num3) {
+            cout<<num1<<" is the greatest number"<<endl;
+        }
+        else {
+            cout<<num3<<" is the greatest number"<<endl;
+        }
+    }
+    else if(num2>num1) {
+        if(num2>num3) {
+            cout<<num2<<" is the greatest number"<<endl;
+        }
+        else {
+            cout<<num3<<" is the greatest number"<<endl;
+        }
+    }
+    else {
+        cout<<"All three numbers are equal";
+    }
+
+}
+
+
+
+//PRN: 22070123102
+//Exp-5
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int  num;
+    cout<<"Enter number: ";
+    cin>>num;
+    if(num==0) {
+        cout<<num<<" is zero"<<endl;
+    }
+    else if(num%2!=0){
+        cout<<num<<" is odd"<<endl;
+    }
+    else {
+        cout<<num<<" is even"<<endl;
+    }
+}
