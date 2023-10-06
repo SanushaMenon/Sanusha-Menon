@@ -1,0 +1,76 @@
+//PRN:22070123099
+//NAME:SANUSHA MENON
+//EXPERIMENT NO:17
+
+//SINGLY LINKED LIST
+#include <iostream>
+using namespace std;
+class Node{
+    public:
+    int a;
+    Node*next;
+    
+    Node(int data){
+        a=data;
+        next=NULL;
+    }
+};
+int main(){
+    Node*n=new Node(100);
+    cout<<n->a<<" "<<n->next<<endl;
+    return 0;
+}
+
+
+
+#2
+//PRN:22070123099
+//NAME:SANUSHA MENON
+//EXPERIMENT NO:17
+
+//ADDING NEW NODE AT START 
+#include <iostream>
+using namespace std;
+class Node{
+    public:
+    int a;
+    Node*next;
+    
+    Node(int data){
+        a=data;
+        next=NULL;
+    }
+};
+void insertAtHead(Node*&head,int a)
+{
+    Node*new_node=new Node(a);
+    new_node->next=head;
+    head=new_node;
+}
+void display(Node*head)
+{
+    Node*temp=head;
+    while (temp!=NULL){
+        cout<<temp->a<<"->";
+        temp=temp->next;
+    }
+    cout<<"NULL"<<endl;
+}
+
+int main()
+{
+    Node*head=NULL;
+    insertAtHead(head,3);
+    display(head);
+    insertAtHead(head,2);
+    display(head);
+    insertAtHead(head,1);
+    display(head);
+    return 0;
+    
+}
+
+
+3->NULL
+2->3->NULL
+1->2->3->NULL
